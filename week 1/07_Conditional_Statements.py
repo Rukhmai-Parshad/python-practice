@@ -1,16 +1,10 @@
-# =========================================================
-# Conditional Statements = # Conditional statements are used to make decisions in a program.
+# ======================================================================================
+# Conditional Statements = Conditional statements are used 
+# to make decisions in a program.
 # They execute different blocks of code based on whether a condition
 # is True or False.
-# =========================================================
-# ---------------------------------------------------------
-# Real-life example:
+# ======================================================================================
 
-# Agar baarish ho rahi hai:
-#     Umbrella le jao
-# Warna:
-#     Umbrella mat le jao
-# ---------------------------------------------------------
 #       Comparison Operators
 
 #         ==    Equal To
@@ -19,7 +13,7 @@
 #         <     Less Than
 #         >=    Greater Than Equal To
 #         <=    Less Than Equal To
-# ---------------------------------------------------------
+
 # Conditional Statements = Decision Making
 
 # if        -> One condition
@@ -32,8 +26,10 @@
 # not       -> Reverses the result
 
 # ternary   -> One-line if-else
-# ----------------------------------------------------------
+
+# ======================================================================================
 # Examples
+# ======================================================================================
 
 is_raining = True
 if is_raining:
@@ -133,9 +129,10 @@ if name:
 else:
     print("Empty")
 
-# =========================================================
+# ======================================================================================
 # Questions
-# =========================================================
+# ======================================================================================
+
 # Check whether a number is Positive, Negative, or Zero.
 num = -15
 

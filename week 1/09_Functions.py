@@ -1,11 +1,11 @@
-# ========================================================================
+# ======================================================================================
 # Functions = # A function is a reusable block of code
 # that performs a specific task.
 #
 # Instead of writing the same code again and again,
 # we can write it once inside a function and call it whenever needed.
-# =======================================================================
-# -----------------------------------------------------------------------
+# ======================================================================================
+
 # Benefits of Functions
 
 # Code Reusability
@@ -13,7 +13,7 @@
 # Easier Debugging
 # Easier Maintenance
 # Less Code Repetition
-# ----------------------------------------------------------------------
+
 # Quick Revision
 
 # def      -> Create Function
@@ -25,19 +25,21 @@
 # global    -> Outside function
 # *args     -> Multiple positional arguments
 # **kwargs  -> Multiple keyword arguments
-# ----------------------------------------------------------------------------
 
 # Syntax
 # def function_name():
 #     # code
 # function_name()     
-# --------------------------------------------------------------------------
+
 # Function with Parameters
 
 # Parameters are variables that receive values
 # when a function is called. 
-# --------------------------------------------------------------------------
+
+# ======================================================================================
 # Examples
+# ======================================================================================
+
 # Single Parameters
 def greet(name):
    print("Hello", name)
@@ -100,9 +102,9 @@ def test():
     print(x)
 test()
 
-# =============================================================
+# ======================================================================================
 # Questions
-# =============================================================
+# ======================================================================================
 
 # Create a function that prints "Hello World".
 def greet(name):
@@ -270,15 +272,80 @@ def char_frequency(text):
     return freq
 print(char_frequency("banana"))
 
-# ====================================================================
+# ======================================================================================
+# lambda(), map(), filter(), shorted()
+# ======================================================================================
+
+# --------------------------------------------------------------------------------------
+
 # Lambda = # A lambda function is a small anonymous function.
 # Anonymous means it has no name.
 # It is generally used for short operations.
 
 # Syntax
 # lambda parameters: expression
-# ====================================================================
 
+# -------------------------------------------------------------------------------------
+
+# map() = map() applies a function
+# to every element of an iterable.
+
+# map() Memory Trick
+# map()
+# Take every element
+# ↓
+# Apply function
+# ↓
+# Return new values
+
+# -------------------------------------------------------------------------------------
+
+# filter() = filter() keeps only those elements for which the condition is True.
+
+# filter() Memory Trick
+# filter()
+# Check condition
+# ↓
+# Keep True values
+# ↓
+# Remove False values
+
+# -------------------------------------------------------------------------------------
+
+# sorted() = sorted() is used to sort elements of an iterable
+# and returns a new sorted list.
+# By default it sorts in ascending order.
+# It can also sort using custom rules with key=.
+
+# sorted() Memory Trick
+# Data
+#   ↓
+# Sort
+#   ↓
+# Return New List
+
+# Syntax
+
+# sorted(iterable)
+# sorted(iterable, reverse=True)
+# sorted(iterable, key=function)
+
+# -------------------------------------------------------------------------------------
+
+# Quick Revision
+
+# lambda() -> Anonymous Function
+# map() -> Transform Data
+# filter() -> Filter Data
+# sorted(key=...) -> Custom Sortin
+
+# --------------------------------------------------------------------------------------
+
+# ======================================================================================
+# Examples = Lambda(), Map(), filter(), shorted()
+# ======================================================================================
+
+# Lambda()
 Square = lambda num: num * num
 print(Square(3))
 
@@ -289,55 +356,25 @@ print(is_even(7))
 # Lambda with condition
 check = lambda num: "Even" if num % 2 == 0 else "Odd"
 print(check(10))
-# -------------------------------------------------------------------------
 
 # map()
-# map() applies a function
-# to every element of an iterable.
-
-# map() Memory Trick
-# map()
-# Take every element
-# ↓
-# Apply function
-# ↓
-# Return new values
-# ------------------------------------------------------------------
-
 nums = [1, 2, 3, 4]
 result = list(map(lambda x: x * x, nums))
 print(result)
 
-# ------------------------------------------------------------------
 # filter()
-# filter() keeps only those elements for which the condition is True.
-
-# filter() Memory Trick
-# filter()
-# Check condition
-# ↓
-# Keep True values
-# ↓
-# Remove False values
-# -----------------------------------------------------------------
 nums = [1, 2, 3, 4, 5, 6]
 result = list(filter(lambda x: x % 2 == 0, nums))
 print(result)
 
-# ------------------------------------------------------------------
-# Sort by String Length
-
+# shorted()
 names = ["python", "ai", "developer", "code"]
 result = sorted(names, key=lambda x: len(x))
 print(result)
 
-# ----------------------------------------------------------------
-# Quick Revision
-# lambda -> Anonymous Function
-# map() -> Transform Data
-# filter() -> Filter Data
-# sorted(key=...) -> Custom Sorting
-# -----------------------------------------------------------------
+# ======================================================================================
+# Questions = Lambda(), Map(), filter(), shorted()
+# ======================================================================================
 
 # Create a lambda function to find square of a number.
 square = lambda x: x * x

@@ -1,9 +1,9 @@
-# ============================================================================
+# ===================================================================================
 # Strings = A string is a sequence of characters.
-# ============================================================================
+# ===================================================================================
 
-# ----------------------------------------------------------------------------
 # Most Important Functions
+
 # len()
 # upper()
 # lower()
@@ -17,7 +17,7 @@
 # strip()
 
 
-name = "Cutie"
+# name = "Cutie"
 
 # Each character has an index.
 # text = "Python"
@@ -40,20 +40,24 @@ name = "Cutie"
 # 2. Strings are Ordered
 # Characters maintain their position.
 
-text = "Python"
-print(text[0])
-print(text[3])
+# text = "Python"
+# print(text[0])
+# print(text[3])
 
 # Accessing Characters
-text = "Python"
+# text = "Python"
 
-print(text[0])
-print(text[1])
-print(text[-1])
-print(text[-2])
+# print(text[0])
+# print(text[1])
+# print(text[-1])
+# print(text[-2])
 
 # String Slicing
 # string[start:end:step]
+
+# =====================================================================================
+# Example
+# =====================================================================================
 
 #String functions
 name = "rukhmai parshad"

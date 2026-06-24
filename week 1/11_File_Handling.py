@@ -1,12 +1,11 @@
-# =============================================================
+# ===================================================================================== 
 # File Handling = # File handling allows us to:
-#
 # Read data from files
 # Write data to files
 # Update files
 # Store data permanently
-# ==========================================================
-# ----------------------------------------------------------
+# ===================================================================================== 
+
 # Most Important Concepts
 
 # open()
@@ -33,14 +32,15 @@
 "r+"  # Read + Write
 # File must exist
 # Does not delete content
-# ------------------------------------------------------------
 
 # Opening and read a file 
+
 # file = open("week 1\\data.txt","r")
 # print(file.read())
 # file.close()
 
 # Read line by line
+
 # file = open("week 1\\data.txt", "r")
 
 # print(file.readline())
@@ -59,8 +59,8 @@
 # file.write("\nHello Django")
 # file.close()
 
-# ----------------------------------------------
 # Best Practice → with
+
 # Instead of:
 
 # file = open("data.txt", "r")
@@ -74,17 +74,11 @@
 
 # Why?
 # File automatically closes.
-# ----------------------------------------------
 
-# Check file exists
-# import os
-# if os.path.exists("week 1\\data.txt"):
-#    print("File Exists")
-# else:
-#    print("File Not Found")   
-# ---------------------------------------------
+# ===================================================================================== 
+# Example
+# ===================================================================================== 
 
-# Practical Example
 # Create a file named data.txt and write your name into it.
 # Read data.txt and print its content.
 # Append your city name into data.txt.
@@ -125,3 +119,10 @@ print("Characters:", characters)
 # with open("notes.txt", "r") as file:
 #     print(file.read())
 
+# Check file exists
+
+import os
+if os.path.exists("week 1\\data.txt"):
+   print("File Exists")
+else:
+   print("File Not Found")   
