@@ -447,103 +447,231 @@
 # SETS
 # ======================================================================================
 
-# Q1 Remove Duplicates from List using Set
-def remove_duplicates(lst):
-   new_lst = list(set(lst))
-   return new_lst
+# # Q1 Remove Duplicates from List using Set
+# def remove_duplicates(lst):
+#    new_lst = list(set(lst))
+#    return new_lst
 
-lst = [12, 34, 34, 67, 45, 23, 45, 23, 76, 76, 76, 32, 23, 34]
-result = remove_duplicates(lst)
-print(result)
+# lst = [12, 34, 34, 67, 45, 23, 45, 23, 76, 76, 76, 32, 23, 34]
+# result = remove_duplicates(lst)
+# print(result)
 
-# Q2 Find Union of Two Sets
-def find_union(s1, s2):
-   s = (s1 | s2)
-   return s
+# # Q2 Find Union of Two Sets
+# def find_union(s1, s2):
+#    s = (s1 | s2)
+#    return s
 
-s1 = {12, 34, 54, 65, 12, 34}
-s2 = {12, 23, 34, 56 ,76, 34}
-result = find_union(s1, s2)
-print(f"Union of Two Sets: {result}")
+# s1 = {12, 34, 54, 65, 12, 34}
+# s2 = {12, 23, 34, 56 ,76, 34}
+# result = find_union(s1, s2)
+# print(f"Union of Two Sets: {result}")
 
-# Q3 Find Intersection of Two Sets
-def find_intersection(s1, s2):
-   s = (s1 & s2)
-   return s
+# # Q3 Find Intersection of Two Sets
+# def find_intersection(s1, s2):
+#    s = (s1 & s2)
+#    return s
 
-s1 = {12, 34, 54, 65, 12, 34}
-s2 = {12, 23, 34, 56 ,76, 34}
-result = find_intersection(s1, s2)
-print(f"Intersection of Two Sets: {result}")
+# s1 = {12, 34, 54, 65, 12, 34}
+# s2 = {12, 23, 34, 56 ,76, 34}
+# result = find_intersection(s1, s2)
+# print(f"Intersection of Two Sets: {result}")
 
-# Q4 Find Difference of Two Sets
-def find_difference(s1, s2):
-   s = (s1 - s2)
-   return s
+# # Q4 Find Difference of Two Sets
+# def find_difference(s1, s2):
+#    s = (s1 - s2)
+#    return s
 
-s1 = {12, 34, 54, 65, 12, 34}
-s2 = {12, 23, 34, 56 ,76, 34}
-result = find_difference(s1, s2)
-print(f"Difference of Two Sets: {result}")
+# s1 = {12, 34, 54, 65, 12, 34}
+# s2 = {12, 23, 34, 56 ,76, 34}
+# result = find_difference(s1, s2)
+# print(f"Difference of Two Sets: {result}")
 
-# Q5 Find Symmetric Difference
-def symmetric_difference(s1, s2):
-   s = (s1 ^ s2)
-   return s
+# # Q5 Find Symmetric Difference
+# def symmetric_difference(s1, s2):
+#    s = (s1 ^ s2)
+#    return s
 
-s1 = {12, 34, 54, 65, 12, 34}
-s2 = {12, 23, 34, 56 ,76, 34}
-result = symmetric_difference(s1, s2)
-print(f"Symmetric Difference of Two Sets: {result}")
+# s1 = {12, 34, 54, 65, 12, 34}
+# s2 = {12, 23, 34, 56 ,76, 34}
+# result = symmetric_difference(s1, s2)
+# print(f"Symmetric Difference of Two Sets: {result}")
 
-# Q6 Check Subset
-def check_subset(s1, s2):
-   return s1.issubset(s2)
+# # Q6 Check Subset
 # def check_subset(s1, s2):
-#     return s1 <= s2
+#    return s1.issubset(s2)
+# # def check_subset(s1, s2):
+# #     return s1 <= s2
 
-s1 = {12, 34}
-s2 = {12, 23, 34, 56 ,76, 34}
-if check_subset(s1, s2):
-   print("S1 is subset of S2")
-else:
-   print("S1 is not a subset of S2")   
+# s1 = {12, 34}
+# s2 = {12, 23, 34, 56 ,76, 34}
+# if check_subset(s1, s2):
+#    print("S1 is subset of S2")
+# else:
+#    print("S1 is not a subset of S2")   
 
-# Q7 Check Superset
-def check_superset(s1, s2):
-   return s1.issuperset(s2)
+# # Q7 Check Superset
 # def check_superset(s1, s2):
-#     return s1 >= s2
+#    return s1.issuperset(s2)
+# # def check_superset(s1, s2):
+# #     return s1 >= s2
 
-s1 = {98, 78, 67, 54, 45, 54}
-s2 = {12, 23, 34, 56 ,76, 34}
-if check_superset(s1, s2):
-   print("S1 is superset of S2")
-else:
-   print("S1 is not a superset of S2")
+# s1 = {98, 78, 67, 54, 45, 54}
+# s2 = {12, 23, 34, 56 ,76, 34}
+# if check_superset(s1, s2):
+#    print("S1 is superset of S2")
+# else:
+#    print("S1 is not a superset of S2")
 
-# Q8 Find Unique Elements
-def find_unique(s):
-   s1 = s.split()
-   return set(s1)
+# # Q8 Find Unique Elements
+# def find_unique(s):
+#    s1 = s.split()
+#    return set(s1)
 
-s = "python is an easy language and python is powerful"
-result = find_unique(s)
-print(result)
+# s = "python is an easy language and python is powerful"
+# result = find_unique(s)
+# print(result)
 
-# Q9 Remove an Element from Set
-def remove_element(s1, element):
-   s1.remove(element)
-   return s1
+# # Q9 Remove an Element from Set
+# def remove_element(s1, element):
+#    s1.remove(element)
+#    return s1
 
-s1 = {23, 45, 65, 34, 65, 34, 34, 24, 3, 56 ,65, 65, 56}
-result = remove_element(s1, 34)
-print(result)
+# s1 = {23, 45, 65, 34, 65, 34, 34, 24, 3, 56 ,65, 65, 56}
+# result = remove_element(s1, 34)
+# print(result)
 
-# Q10 Convert Set to List
-def set_to_list(s1):
-    return list(s1)
+# # Q10 Convert Set to List
+# def set_to_list(s1):
+#     return list(s1)
 
-s1 = {23, 54 ,65, 34, 76, 56, 45}
-result = set_to_list(s1) 
-print(result)  
+# s1 = {23, 54 ,65, 34, 76, 56, 45}
+# result = set_to_list(s1) 
+# print(result)  
+
+# ======================================================================================
+# CONDITIONAL STATEMENTS
+# ======================================================================================
+
+# Q1 Grade Calculator
+# def grade_calculator(marks):
+#    if marks >= 90:
+#       print("Grade A")
+#    elif marks >= 75:
+#       print("Grade B")   
+#    elif marks >= 60:
+#       print("Grade C")
+#    elif marks >= 40:
+#       print("Grade D") 
+#    else:
+#       print("fail") 
+
+# marks = int(input("Enter your marks: "))
+# grade_calculator(marks)
+
+# # 2 ATM Withdrawal System
+# def atm_withdrawal(balance, withdraw_amount):
+#    if withdraw_amount <= balance:
+#       print("Transaction Successful")
+#    else:
+#       print("Insufficient Balance") 
+
+# balance = int(input("Enter balance: "))
+# withdraw_amount = int(input("Enter amount: "))
+# atm_withdrawal(balance, withdraw_amount)      
+
+   
+# # Q3 Loan Eligibility System
+# def loan_eligibility(age, salary):
+#    if age >= 18 and salary >= 40000:
+#       print("You are eligibil for loan")
+#    else:
+#       print("You are not eligibil") 
+
+# age = int(input("Enter your age: "))
+# salary = int(input("Enter your salary: "))
+# loan_eligibility(age, salary)        
+
+
+# # Q4 Electricity Bill Calculator
+# def electricity_bill_calculator(units):
+#     if units <= 100:
+#         return units * 5
+#     elif units <= 300:
+#         return units * 7
+#     else:
+#         return units * 10
+
+# units = int(input("Enter units: "))
+# result = electricity_bill_calculator(units)
+# print(f"Total bill is: {result}")
+
+# # Q5 Login System
+# def login_system(username, password):
+#    if username == "rukhmaiparshad" and password == "987654321":
+#       print("Login successfully!")
+#    else:
+#       print("Try again!")
+
+# username = input("Enter user name:")
+# password = input("Enter password: ")
+# login_system(username, password)         
+
+# # Q6 Marriage Eligibility
+# def marriage_eligibility(gender, age):
+#    if gender.lower() == "female" and age >= 18:
+#       print("Eligibil for marriage")
+
+#    elif gender.lower() == "male" and age >= 21:
+#       print("Eligiblil for marriage")
+
+#    else:
+#       print("Not eliginil for marriage")
+
+# gender = input("Enter your gender: ")
+# age = int(input("Enter your age: "))
+# marriage_eligibility(gender, age)         
+
+
+# Q7 Driving License Eligibility
+def driving_licence(age, has_id):
+    if age >= 18 and has_id:
+        print("Eligible")
+    else:
+        print("Not Eligible")
+
+age = int(input("Enter your age: "))
+has_id = True
+driving_licence(age, has_id)
+
+# Q8 Shopping Discount System
+def shopping_discount_system(amount):
+    if amount >= 5000:
+        print("20% discount")
+    elif amount >= 3000:
+        print("10% discount")
+    else:
+        print("No discount")
+
+amount = int(input("Enter amount: "))
+shopping_discount_system(amount)
+
+# Q9 Largest Among Three Numbers
+def largest_among_numbers(a, b, c):
+    print(max(a, b, c))   
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+largest_among_numbers(a, b, c)
+
+# Q10 Leap Year Checker
+def leap_year_checker(year):
+   if year % 400 ==0:
+      print("Leap year")
+   elif year % 4 == 0 and year % 100 != 0:
+      print("Leap year")
+   else:
+      print("Not a leap year ")   
+
+year = int(input("Enter year: "))
+leap_year_checker(year)      
