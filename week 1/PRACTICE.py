@@ -245,55 +245,305 @@
 # TUPLES
 # ====================================================================================== 
 #   
-# Q1 Find Length of Tuple
-def find_length(tpl):
-   return len(tpl)
+# # Q1 Find Length of Tuple
+# def find_length(tpl):
+#    return len(tpl)
 
-tpl = ("Rukhmai", 21, "BCA", "Karnal")
-result = find_length(tpl)
-print(f"Length of Tuple: {result}")
+# tpl = ("Rukhmai", 21, "BCA", "Karnal")
+# result = find_length(tpl)
+# print(f"Length of Tuple: {result}")
 
-# Q2 Find Maximum Element
-def find_maximum(tpl):
-   return max(tpl)
+# # Q2 Find Maximum Element
+# def find_maximum(tpl):
+#    return max(tpl)
 
-tpl = (23, 45, 65, 34, 76, 98, 67, 99, 45)
-result = find_maximum(tpl)
-print(f"Maximum Element: {result}")
+# tpl = (23, 45, 65, 34, 76, 98, 67, 99, 45)
+# result = find_maximum(tpl)
+# print(f"Maximum Element: {result}")
 
-# Q3 Find Minimum Element
-def find_minimum(tpl):
-   return min(tpl)
+# # Q3 Find Minimum Element
+# def find_minimum(tpl):
+#    return min(tpl)
 
-tpl = (23, 45, 65, 34, 76, 98, 67, 99, 45)
-result = find_minimum(tpl)
-print(f"Minimum Element: {result}")
+# tpl = (23, 45, 65, 34, 76, 98, 67, 99, 45)
+# result = find_minimum(tpl)
+# print(f"Minimum Element: {result}")
 
-# Q4 Count Occurrences of an Element
+# # Q4 Count Occurrences of an Element
+# def count_occurrences(tpl, element):
+#    return tpl.count(element)
+
+# tpl = (1, 2, 3, 2, 4, 2)
+# print(count_occurrences(tpl, 2))
+
+# # Q5 Convert Tuple to List
+# def tuple_to_list(tpl):
+#    lst = list(tpl)
+#    return lst
+
+# tpl = ("Rukhmai", 21, "Pardeep", 22)
+# result = tuple_to_list(tpl)
+# print(f"Tuple to List: {result}")
+
+# # Q6 Convert List to Tuple
+# def list_to_tuple(lst):
+#    tpl = tuple(lst)
+#    return tpl
+
+# lst = [1, 56, 56, 87, 45, 34, 98, 34, 23, 45]
+# result = list_to_tuple(lst)
+# print(f"List to Tuple: {result}")
+
+# # Q7 Check Whether Element Exists
+# def element_exists(tpl, element):
+#     return element in tpl
+
+# tpl = (10, 20, 30, 40)
+# print(element_exists(tpl, 20))
+
+# # Q8 Find Index of an Element
+# def find_index(tpl, element):
+#     if element in tpl:
+#         return tpl.index(element)
+#     return -1
+
+# tpl = (10, 20, 30, 40)
+# print(find_index(tpl, 30))
+
+# # Q9 Concatenate Two Tuples
+# def concatenate_tuples(tpl1, tpl2):
+#     return tpl1 + tpl2
+
+# tpl1 = (1, 2, 3)
+# tpl2 = (4, 5, 6)
+# print(concatenate_tuples(tpl1, tpl2))
+
+# # Q10 Unpack Tuple Values
+# tpl = ("Rukhmai", 21, "BCA")
+# name, age, course = tpl
+
+# print(name)
+# print(age)
+# print(course)
+
+# ======================================================================================
+# DICTIONARY
+# ======================================================================================
+
+# # Q1 Count Frequency of Characters
+# def count_frequency(s):
+#    freq = {}
+#    for ch in s:
+#       freq[ch] = freq.get(ch, 0) + 1
+#    return freq
+
+# s = input("Enter some data: ")
+# result = count_frequency(s)
+# print(f"Frequency of character: {result}")
+
+# # Q2 Count Frequency of Words
+# def count_word_Frequency(words):
+#    freq = {}
+#    wd = words.split()
+#    for w in wd:
+#       freq[w] = freq.get(w, 0) + 1
+#    return freq
+
+# words = input("Enter some data: ")
+# result = count_word_Frequency(words)
+# print(result)
+
+# # Q3 Merge Two Dictionaries
+# def merge_dictionaries(dic1, dic2):
+#    dic1.update(dic2)
+#    return dic1
+
+# dic1 = {'a' : 2, 'b' : 3, 'c' : 3} 
+# dic2 = {'d' : 5, 'e' : 6, 'f' : 5}
+# result = merge_dictionaries(dic1, dic2)
+# print(result)
+
+# # Q4 Find Key with Maximum Value
+# def count_max_value(s):
+#    freq = {}
+#    for ch in s:
+#       freq[ch] = freq.get(ch, 0) + 1
+#    return max(freq, key = freq.get)
+
+# s = input("Enter some data: ")
+# result = count_max_value(s)
+# print(f"Key with Maximum Value: {result}")  
+
+# # Q5 Find Key with Minimum Value
+# def count_min_value(s):
+#    freq = {}
+#    for ch in s:
+#       freq[ch] = freq.get(ch, 0) + 1
+#    return min(freq, key = freq.get)
+
+# s = input("Enter some data: ")
+# result = count_min_value(s)
+# print(f"Key with Minimum Value: {result}") 
+
+# # Q6 Invert Dictionary
+# def invert_dictionary(student):
+#    new_dic = {}
+#    for key, value in student.items():
+#       new_dic[value] = key
+#    return new_dic
+
+# student = {
+#    "name" : "rukhmai",
+#    "city" : "karnal",
+#    "age" : 21
+# }      
+# result = invert_dictionary(student)
+# print(f"Inverted Dictionary: {result}")
+
+# # Q7 Sort Dictionary by Value
+# def sort_by_value(dic):
+#     return dict(sorted(dic.items(), key=lambda item: item[1]))
+
+# dic = {
+#     "a": 5,
+#     "b": 2,
+#     "c": 8
+# }
+# result = sort_by_value(dic)
+# print(result)
+
+# # Q8 Check if Key Exists
+# def check_key(dic, key):
+#     return key in dic
+
+# dic1 = {
+#    "name" : "rukhmai",
+#    "city" : "karnal",
+#    "age" : 21
+# }
+# if check_key(dic1, "name"):
+#     print("Key Exists")
+# else:
+#     print("Key Does Not Exist")
+
+# # Q9 Sum All Dictionary Values
+# def sum_values(dic):
+#     return sum(dic.values())
+
+# dic = {'a' : 2, 'b' : 3, 'c' : 3} 
+# result = sum_values(dic) 
+# print(f"Sum All Dictionary Values: {result}")
  
+# # Q10 Create Dictionary from Two Lists
+# def create_dictionary(keys, values):
+#    return dict(zip(keys, values))
 
-# Q5 Convert Tuple to List
-def tuple_to_list(tpl):
-   lst = list(tpl)
-   return lst
+# keys = ["name", "age", "city"]
+# values = ["Rukhmai", 21, "Karnal"]
+# result = create_dictionary(keys, values)
+# print(f"Dictionary from Two Lists: {result}")
 
-tpl = ("Rukhmai", 21, "Pardeep", 22)
-result = tuple_to_list(tpl)
-print(f"Tuple to List: {result}")
+# ======================================================================================
+# SETS
+# ======================================================================================
 
-# Q6 Convert List to Tuple
-def list_to_tuple(lst):
-   tpl = tuple(lst)
-   return tpl
+# Q1 Remove Duplicates from List using Set
+def remove_duplicates(lst):
+   new_lst = list(set(lst))
+   return new_lst
 
-lst = [1, 56, 56, 87, 45, 34, 98, 34, 23, 45]
-result = list_to_tuple(lst)
-print(f"List to Tuple: {result}")
+lst = [12, 34, 34, 67, 45, 23, 45, 23, 76, 76, 76, 32, 23, 34]
+result = remove_duplicates(lst)
+print(result)
 
-# Q7 Check Whether Element Exists
+# Q2 Find Union of Two Sets
+def find_union(s1, s2):
+   s = (s1 | s2)
+   return s
 
-# Q8 Find Index of an Element
+s1 = {12, 34, 54, 65, 12, 34}
+s2 = {12, 23, 34, 56 ,76, 34}
+result = find_union(s1, s2)
+print(f"Union of Two Sets: {result}")
 
-# Q9 Concatenate Two Tuples
+# Q3 Find Intersection of Two Sets
+def find_intersection(s1, s2):
+   s = (s1 & s2)
+   return s
 
-# Q10 Unpack Tuple Values
+s1 = {12, 34, 54, 65, 12, 34}
+s2 = {12, 23, 34, 56 ,76, 34}
+result = find_intersection(s1, s2)
+print(f"Intersection of Two Sets: {result}")
+
+# Q4 Find Difference of Two Sets
+def find_difference(s1, s2):
+   s = (s1 - s2)
+   return s
+
+s1 = {12, 34, 54, 65, 12, 34}
+s2 = {12, 23, 34, 56 ,76, 34}
+result = find_difference(s1, s2)
+print(f"Difference of Two Sets: {result}")
+
+# Q5 Find Symmetric Difference
+def symmetric_difference(s1, s2):
+   s = (s1 ^ s2)
+   return s
+
+s1 = {12, 34, 54, 65, 12, 34}
+s2 = {12, 23, 34, 56 ,76, 34}
+result = symmetric_difference(s1, s2)
+print(f"Symmetric Difference of Two Sets: {result}")
+
+# Q6 Check Subset
+def check_subset(s1, s2):
+   return s1.issubset(s2)
+# def check_subset(s1, s2):
+#     return s1 <= s2
+
+s1 = {12, 34}
+s2 = {12, 23, 34, 56 ,76, 34}
+if check_subset(s1, s2):
+   print("S1 is subset of S2")
+else:
+   print("S1 is not a subset of S2")   
+
+# Q7 Check Superset
+def check_superset(s1, s2):
+   return s1.issuperset(s2)
+# def check_superset(s1, s2):
+#     return s1 >= s2
+
+s1 = {98, 78, 67, 54, 45, 54}
+s2 = {12, 23, 34, 56 ,76, 34}
+if check_superset(s1, s2):
+   print("S1 is superset of S2")
+else:
+   print("S1 is not a superset of S2")
+
+# Q8 Find Unique Elements
+def find_unique(s):
+   s1 = s.split()
+   return set(s1)
+
+s = "python is an easy language and python is powerful"
+result = find_unique(s)
+print(result)
+
+# Q9 Remove an Element from Set
+def remove_element(s1, element):
+   s1.remove(element)
+   return s1
+
+s1 = {23, 45, 65, 34, 65, 34, 34, 24, 3, 56 ,65, 65, 56}
+result = remove_element(s1, 34)
+print(result)
+
+# Q10 Convert Set to List
+def set_to_list(s1):
+    return list(s1)
+
+s1 = {23, 54 ,65, 34, 76, 56, 45}
+result = set_to_list(s1) 
+print(result)  
