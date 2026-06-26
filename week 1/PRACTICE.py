@@ -552,7 +552,7 @@
 # CONDITIONAL STATEMENTS
 # ======================================================================================
 
-# Q1 Grade Calculator
+# # Q1 Grade Calculator
 # def grade_calculator(marks):
 #    if marks >= 90:
 #       print("Grade A")
@@ -570,15 +570,14 @@
 
 # # 2 ATM Withdrawal System
 # def atm_withdrawal(balance, withdraw_amount):
-#    if withdraw_amount <= balance:
-#       print("Transaction Successful")
-#    else:
-#       print("Insufficient Balance") 
+#     if withdraw_amount <= balance:
+#         print("Transaction Successful")
+#     else:
+#         print("Insufficient Balance") 
 
 # balance = int(input("Enter balance: "))
 # withdraw_amount = int(input("Enter amount: "))
 # atm_withdrawal(balance, withdraw_amount)      
-
    
 # # Q3 Loan Eligibility System
 # def loan_eligibility(age, salary):
@@ -590,7 +589,6 @@
 # age = int(input("Enter your age: "))
 # salary = int(input("Enter your salary: "))
 # loan_eligibility(age, salary)        
-
 
 # # Q4 Electricity Bill Calculator
 # def electricity_bill_calculator(units):
@@ -607,10 +605,10 @@
 
 # # Q5 Login System
 # def login_system(username, password):
-#    if username == "rukhmaiparshad" and password == "987654321":
-#       print("Login successfully!")
-#    else:
-#       print("Try again!")
+#     if username == "rukhmaiparshad" and password == "987654321":
+#         print("Login successfully!")
+#     else:
+#         print("Try again!")
 
 # username = input("Enter user name:")
 # password = input("Enter password: ")
@@ -618,60 +616,181 @@
 
 # # Q6 Marriage Eligibility
 # def marriage_eligibility(gender, age):
-#    if gender.lower() == "female" and age >= 18:
-#       print("Eligibil for marriage")
+#     if gender.lower() == "female" and age >= 18:
+#         print("Eligibil for marriage")
 
-#    elif gender.lower() == "male" and age >= 21:
-#       print("Eligiblil for marriage")
+#     elif gender.lower() == "male" and age >= 21:
+#         print("Eligiblil for marriage")
 
-#    else:
-#       print("Not eliginil for marriage")
+#     else:
+#         print("Not eliginil for marriage")
 
 # gender = input("Enter your gender: ")
 # age = int(input("Enter your age: "))
 # marriage_eligibility(gender, age)         
 
+# # Q7 Driving License Eligibility
+# def driving_licence(age, has_id):
+#     if age >= 18 and has_id:
+#         print("Eligible")
+#     else:
+#         print("Not Eligible")
 
-# Q7 Driving License Eligibility
-def driving_licence(age, has_id):
-    if age >= 18 and has_id:
-        print("Eligible")
-    else:
-        print("Not Eligible")
+# age = int(input("Enter your age: "))
+# has_id = True
+# driving_licence(age, has_id)
 
-age = int(input("Enter your age: "))
-has_id = True
-driving_licence(age, has_id)
+# # Q8 Shopping Discount System
+# def shopping_discount_system(amount):
+#     if amount >= 5000:
+#         print("20% discount")
+#     elif amount >= 3000:
+#         print("10% discount")
+#     else:
+#         print("No discount")
 
-# Q8 Shopping Discount System
-def shopping_discount_system(amount):
-    if amount >= 5000:
-        print("20% discount")
-    elif amount >= 3000:
-        print("10% discount")
-    else:
-        print("No discount")
+# amount = int(input("Enter amount: "))
+# shopping_discount_system(amount )
 
-amount = int(input("Enter amount: "))
-shopping_discount_system(amount)
+# # Q9 Largest Among Three Numbers
+# def largest_among_numbers(a, b, c):
+#     print(max(a, b, c))   
 
-# Q9 Largest Among Three Numbers
-def largest_among_numbers(a, b, c):
-    print(max(a, b, c))   
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+# c = int(input("Enter third number: "))
+# largest_among_numbers(a, b, c)
 
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-c = int(input("Enter third number: "))
-largest_among_numbers(a, b, c)
+# # Q10 Leap Year Checker
+# def leap_year_checker(year):
+#     if year % 400 ==0:
+#         print("Leap year")
+#     elif year % 4 == 0 and year % 100 != 0:
+#         print("Leap year")
+#     else:
+#         print("Not a leap year ")   
 
-# Q10 Leap Year Checker
-def leap_year_checker(year):
-   if year % 400 ==0:
-      print("Leap year")
-   elif year % 4 == 0 and year % 100 != 0:
-      print("Leap year")
-   else:
-      print("Not a leap year ")   
+# year = int(input("Enter year: "))
+# leap_year_checker(year)
 
-year = int(input("Enter year: "))
-leap_year_checker(year)      
+# ======================================================================================
+# LOOPS
+# ======================================================================================
+
+# # Q1 Sum of Numbers 1-100
+# def sum_of_numbers():
+#     total = 0
+#     for i in range(0,101):
+#         total = total + i
+#     return total
+
+# result = sum_of_numbers() 
+# print(f"Sum of Numbers 1-100: {result}")   
+
+# # Q2 Factorial using Loop
+# def factorial(n):
+#     fact = 1
+#     for i in range(1, n+1):
+#         fact = fact*i
+#     return fact
+
+# n = int(input("Enter a number: "))
+# result = factorial(n)   
+# print(f"factorial: {result}") 
+
+# # Q3 Fibonacci using Loop
+# def fibonacci(num):
+#     a = 0
+#     b = 1
+#     z = 0
+#     while(z <=num):
+#         print(z)
+#         a = b 
+#         b = z
+#         z = a + b
+
+# num = int(input("Enter a number: "))
+# fibonacci(num)
+
+# # Q4 Prime Number Check
+# def prime_number(num):
+
+#     if num < 2:
+#         print("Not Prime")
+#         return
+#     for i in range(2, num):
+#         if num % i == 0:
+#             print("Not Prime")
+#             return
+#     print("Prime")    
+
+# num = int(input("Enter a number: "))
+# prime_number(num)
+          
+# # Q5 Count Digits
+# def count_digits(num):
+#     count = 0
+#     while num > 0:
+#         count += 1
+#         num = num // 10
+#     return count
+
+# num = int(input("Enter a number: "))
+# print(f"Number of digits: {count_digits(num)}")
+
+# # Q6 Reverse Number
+# def reverse_number(num):
+#     reverse = 0
+#     while num > 0:
+#         digit = num % 10
+#         reverse = reverse * 10 + digit
+#         num = num // 10
+#     return reverse
+
+# num = int(input("Enter a number: "))
+# print(reverse_number(num))
+
+# Q7 Multiplication Table
+def multiplication_table(n):
+    for i in range(1, 11):
+        print(f"{n} X {i} = {n*i}")
+
+n = int(input("Enter a number: "))
+multiplication_table(n)
+        
+# Q8 Armstrong Number
+# def armstrong_number(num):
+#     temp = num
+#     total = 0
+#     digits = len(str(num))
+#     while temp > 0:
+#         digit = temp % 10
+#         total = total + (digit ** digits)
+#         temp = temp // 10
+#     return total == num
+
+# num = int(input("Enter a number: "))
+# if armstrong_number(num):
+#     print("Armstrong Number")
+# else:
+#     print("Not an Armstrong Number")
+
+# # Q9 Pattern Printing (*)
+# def pattern(rows):
+#     for i in range(1, rows+1):
+#         print("*"*i)
+
+# rows = int(input("Enter number of rows: "))
+# pattern(rows)        
+
+# # Q10 Find Largest Number in List
+# def largest_number(nums):
+#     largest = nums[0]
+#     for num in nums:
+#         if num > largest:
+#             largest = num
+#     return largest
+
+# nums = [12 ,34 ,65, 78 ,45, 99 ,34 ,23, 45]
+# result = largest_number(nums)
+# print(f"Largest number: {result}")
